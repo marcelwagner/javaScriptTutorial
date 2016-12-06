@@ -1,19 +1,19 @@
 Use this Wokbook which is stored in
 
-'javascriptWorkbook.js'
+*javascriptWorkbook.js*
 
-to get familiar width
+to get familiar width 
 
 - typeof
 - JavaScript Types
--- Strings
--- Numbers
--- Objects
--- Classes
--- Booleans
--- Null
--- Functions
--- Undefined
+  - Strings
+  - Numbers
+  - Objects
+  - Classes
+  - Booleans
+  - Null
+  - Functions
+  - Undefined
 - Casting to Boolean
 - Expressions (returning Booleans)
 - Prototyping
