@@ -1,5 +1,4 @@
 /*
- * Added jQuery 2.2.4 as external dependent framework
  * Showing the output by copy the each codeblock and paste it into
  * your browsers console
  *
