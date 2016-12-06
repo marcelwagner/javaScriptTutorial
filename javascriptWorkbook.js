@@ -1,5 +1,5 @@
 /*
- * Showing the output by copy the each codeblock and paste it into
+ * Showing the output by copiing each codeblock and paste it into
  * your browsers console
  *
  * after -> I will show you the console output
