@@ -1,3 +1,5 @@
+##A small Workbook for professional non-javascript-programmers
+
 Use this Wokbook which is stored in
 
 *javascriptWorkbook.js*
