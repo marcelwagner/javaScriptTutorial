@@ -2,7 +2,7 @@ Use this Wokbook which is stored in
 
 *javascriptWorkbook.js*
 
-to get familiar width 
+There you get familiar width:
 
 - typeof
 - JavaScript Types
