@@ -207,6 +207,8 @@ typeof aBoolean;
 // Null
 // --------------------------------
 
+// There is a bug in ES, this should bei typeof null, but is object
+
 // null
 // -> "object"
 typeof null;
