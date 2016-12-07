@@ -86,7 +86,7 @@ var newfloat = "1.787287387925435435355543535355354353554";
 // -> "string"
 typeof newfloat;
 
-// Cast a string to number part 1
+// Cast a string to number part 2
 // -> "number"
 typeof Number(newfloat);
 
@@ -134,7 +134,7 @@ var someClassEs51 = function() {
 // -> "function"
 typeof someClassEs51;
 
-// Store a class into a variable, Variant 1
+// Store a class into a variable, Variant 2
 function someClassEs52 () {
   this.constructor = function() {
     console.log('Hello');
@@ -189,7 +189,7 @@ typeof (1 === 1);
 
 // a operation
 // -> "boolean"
-typeof (typeof 1 === 'number');
+typeof ("Hello world".includes("world"));
 
 // Wrong, this is a string
 // -> "string"
@@ -208,12 +208,12 @@ typeof aBoolean;
 // --------------------------------
 
 // null
-// -> "null"
+// -> "object"
 typeof null;
 
 // A variable with typeof null
 var aNull = null;
-// -> "null"
+// -> "object"
 typeof aNull;
 
 // Functions
@@ -469,7 +469,7 @@ cantExtendString.someProperty;
 // only a anonymous function, it does nothing
 
 // -> Syntax error
-function() { console.log('Never printed sting'); };
+function() { console.log('Never printed string'); };
 
 // This is executing everything what is written in your scope
 (function() {
