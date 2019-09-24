@@ -12,61 +12,65 @@
 // Find out the type of an thing
 // --------------------------------
 
-// -> "object"
 typeof {};
+// -> "object"
 
-// -> "string"
 typeof typeof {};
+// -> "string"
 
 // You can use typeof as a function
-// -> "object"
 typeof({});
+// -> "object"
 
 // What type is a variable
 var someObject = {};
-// -> "object"
 typeof someObject;
+// -> "object"
 
 // What type is a undefined variable
-// -> "undefined"
 typeof someUndefinedVar;
+// -> "undefined"
 
 // Strings
 // --------------------------------
 
-// -> "string"
 typeof 'Hello';
+// -> "string"
 
 // A variable with typeof string
 var someString = 'Hello';
-// -> "string"
 typeof someString;
+// -> "string"
 
 // Numbers
 // --------------------------------
 
-// -> "number"
 typeof 1;
-
 // -> "number"
+
 typeof 1.34354;
-
 // -> "number"
+
 typeof 1.445e7;
-
 // -> "number"
+
 typeof 1.445e-7;
+// -> "number"
 
 // A hex number
-// -> "number"
 typeof 0xFF;
+// -> "number"
 
 // infinity
-// -> "number"
 typeof Infinity;
-
 // -> "number"
+
+// And to set a number var to no number
+typeof NaN;
+// -> "number"
+
 typeof -344;
+// -> "number"
 
 // A big integer
 // -> "number"
@@ -106,24 +110,30 @@ typeof {};
 typeof new Array();
 
 // Shorthand for an new Array
-// -> "object"
 typeof [];
+// -> "object"
+
+// But then, how to find out, if a var is an Array?
+var anArray = [];
+// There is a new static function that is part of ES 5.1
+Array.isArray(anArray);
+// -> true
 
 // A variable with typeof object
 var anObject = {};
-// -> "object"
 typeof anObject;
+// -> "object"
 
 // Classes ES5
 // --------------------------------
 
 // A class in ES5
-// -> "function"
 typeof function() {
   this.constructor = function() {
     console.log('Hello');
   };
 };
+// -> "function"
 
 // Store a class into a variable, Variant 1
 var someClassEs51 = function() {
