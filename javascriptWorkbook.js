@@ -73,41 +73,41 @@ typeof -344;
 // -> "number"
 
 // A big integer
-// -> "number"
 typeof 238983949394334734239239729472987489274;
+// -> "number"
 
 // A float
-// -> "number"
 typeof 1.787287387925435435355543535355354353554;
+// -> "number"
 
 // A variable with typeof float
 var float = 1.787287387925435435355543535355354353554;
-// -> "number"
 typeof float;
+// -> "number"
 
 // Cast a string to number part 1
 var newfloat = "1.787287387925435435355543535355354353554";
-// -> "string"
 typeof newfloat;
+// -> "string"
 
 // Cast a string to number part 2
-// -> "number"
 typeof Number(newfloat);
+// -> "number"
 
 // Objects
 // --------------------------------
 
 // A new instance of object
-// -> "object"
 typeof new Object();
+// -> "object"
 
 // Shorthand for a new instance of an object
-// -> "object"
 typeof {};
+// -> "object"
 
 // Arrays are also instances of object
-// -> "object"
 typeof new Array();
+// -> "object"
 
 // Shorthand for an new Array
 typeof [];
@@ -141,8 +141,8 @@ var someClassEs51 = function() {
     console.log('Hello');
   };
 };
-// -> "function"
 typeof someClassEs51;
+// -> "function"
 
 // Store a class into a variable, Variant 2
 function someClassEs52 () {
@@ -150,19 +150,19 @@ function someClassEs52 () {
     console.log('Hello');
   };
 };
-// -> "function"
 typeof someClassEs52;
+// -> "function"
 
 // Classes ES6
 // --------------------------------
 
 // A class in ES6
-// -> "function"
 typeof class {
     constructor () {
         console.log('Hello')
     }
 }
+// -> "function"
 
 // Store a class into a variable, Variant 1
 var someClassEs61 = class {
@@ -170,8 +170,8 @@ var someClassEs61 = class {
         console.log('Hello')
     }
 }
-// -> "function"
 typeof someClassEs61;
+// -> "function"
 
 // Store a class into a variable, Variant 2
 class someClassEs62 {
@@ -179,111 +179,109 @@ class someClassEs62 {
         console.log('Hello')
     }
 }
-// -> "function"
 typeof someClassEs62;
+// -> "function"
 
 // Boolean
 // --------------------------------
 
 // true
-// -> "boolean"
 typeof true;
+// -> "boolean"
 
 // false
-// -> "boolean"
 typeof false;
+// -> "boolean"
 
 // a expression
-// -> "boolean"
 typeof (1 === 1);
+// -> "boolean"
 
 // a operation
-// -> "boolean"
 typeof ("Hello world".includes("world"));
+// -> "boolean"
 
 // Wrong, this is a string
-// -> "string"
 typeof "false";
+// -> "string"
 
 // Wrong, this is a number
-// -> "number"
 typeof 0;
+// -> "number"
 
 // A variable with typeof boolean
 var aBoolean = true;
-// -> "boolean"
 typeof aBoolean;
+// -> "boolean"
 
 // Null
 // --------------------------------
 
-// There is a bug in ES, this should bei typeof null, but is object
-
 // null
-// -> "object"
 typeof null;
+// -> "object"
 
 // A variable with typeof null
 var aNull = null;
-// -> "object"
 typeof aNull;
+// -> "object"
 
 // Functions
 // --------------------------------
 
 // A anonymous function
-// -> "function"
 typeof function() {};
+// -> "function"
 
 // A named function
 function aNewFuntion() {};
-// -> "function"
 typeof aNewFuntion;
+// -> "function"
 
 // A named function, by storing it into a string
 var anotherFunction = function() {};
-// -> "function"
 typeof anotherFunction;
+// -> "function"
 
 // A named function, by storing it into a string
 var aThirdFunction = new Function();
-// -> "function"
 typeof aThirdFunction;
+// -> "function"
 
 // undefined
 // --------------------------------
 
 // undefined as thing
-// -> "undefined"
 typeof undefined;
+// -> "undefined"
 
 // undefined can be a value
 var nope = undefined;
-// -> "undefined"
 typeof nope;
+// -> "undefined"
 
 // a undefined variable
 var someThing;
-// -> "undefined"
 typeof someThing;
+// -> "undefined"
 
 // a undefined variable
-// -> "undefined"
 typeof someundefinedThing;
+// -> "undefined"
 
 // a variable with the value undefined is save to use
 var newNope = undefined;
-// -> undefined
 newNope;
+// -> undefined
 
 // a initialiced but undefined variable without value is save to use
 var newUndefined;
-// -> undefined
 newUndefined;
+// -> undefined
 
 // a not initialiced variable is not save to use
-// -> ReferenceError
 someOtherUndefinedThing;
+// -> ReferenceError
 
 // you can not use a not initaliced variable in an operation
 someOtherUndefinedThing === undefined
@@ -292,93 +290,93 @@ someOtherUndefinedThing === undefined
 // --------------------------------
 
 // Number 0 casting to false
-// -> false
 Boolean(0);
+// -> false
 
 // Number 1 casting to true
-// -> true
 Boolean(1);
+// -> true
 
 // Empty String casting to false
-// -> false
 Boolean('');
+// -> false
 
 // String casting to true
-// -> true
 Boolean('false');
+// -> true
 
 // String casting to true
-// -> true
 Boolean('true');
+// -> true
 
 // String casting to false
 // -> false
 Boolean(null);
 
 // Empty object casting to true
-// -> true
 Boolean({});
+// -> true
 
 // Empty array casting to true
-// -> true
 Boolean([]);
+// -> true
 
 // undefined casting to false
-// -> false
 Boolean(undefined);
+// -> false
 
 // Infinity casting to true
-// -> true
 Boolean(Infinity);
+// -> true
 
 // Empty function casting to true
-// -> true
 Boolean(function() {});
+// -> true
 
 // Expressions
 // --------------------------------
 
 // == casts automaticly
-// === is not casting
+// === no automatic casting
 
-// -> true
 1 == 1
-
 // -> true
+
 true == 1
+// -> true
 
-// -> false
 true === 1
+// -> false
 
-// -> true
 false == 0
+// -> true
 
-// -> false
 false === 0
-
 // -> false
+
 "false" == 0
-
 // -> false
+
 "true" == 0
+// -> false
 
-// -> true
 "false" == 1
-
 // -> true
+
 "true" == 1
+// -> true
 
-// -> false
 "false" === 0
-
 // -> false
+
 "true" === 0
-
 // -> false
+
 "false" === 1
-
 // -> false
+
 "true" === 1
+// -> false
 
 
 // What is prototyping
@@ -392,12 +390,12 @@ false === 0
 
 // Initialice a string
 var thisIsAString = ' Hello ';
-// -> "string"
 typeof thisIsAString;
+// -> "string"
 
 // Now use a prototype function with the string object
-// -> "Hello"
 thisIsAString.trim();
+// -> "Hello"
 
 
 // So you can use Classes to create new objects
@@ -411,65 +409,65 @@ var anotherClass = function() {
 };
 
 var newObjectFromAnotherClass = new anotherClass();
-// -> "object"
 typeof newObjectFromAnotherClass;
+// -> "object"
 
-// -> true
 newObjectFromAnotherClass instanceof anotherClass;
+// -> true
 
 // Adding some prototype to the class
 
-// -> "undefined"
 typeof newObjectFromAnotherClass.getHello;
+// -> "undefined"
 
 anotherClass.prototype.getHello = function() { console.log('Hello'); };
 
-// -> "function"
 typeof newObjectFromAnotherClass.getHello;
+// -> "function"
 
-// -> Hello
 newObjectFromAnotherClass.getHello();
+// -> Hello
 
 // Overwrite the prototype in the object instance
 
 newObjectFromAnotherClass.getHello = function() { console.log('Horrey'); };
 
-// -> "function"
 typeof newObjectFromAnotherClass.getHello;
+// -> "function"
 
-// -> Horrey
 newObjectFromAnotherClass.getHello();
+// -> Horrey
 
 // Delete the function
 delete newObjectFromAnotherClass.getHello;
 
-// -> "function"
 typeof newObjectFromAnotherClass.getHello;
+// -> "function"
 
-// -> Hello
 newObjectFromAnotherClass.getHello();
+// -> Hello
 
 // You can only extend objects and classes (arrays also, but they are objects) with more properties
 
 var cantExtendString = ' Hello ';
 
-// -> " Hello "
 cantExtendString;
+// -> " Hello "
 
-// -> "string"
 typeof cantExtendString;
+// -> "string"
 
-// -> "Hello"
 cantExtendString.trim();
+// -> "Hello"
 
 // This would not work
 cantExtendString.someProperty = 'String Value';
 
-// -> "undefined"
 typeof cantExtendString.someProperty;
+// -> "undefined"
 
-// -> undefined
 cantExtendString.someProperty;
+// -> undefined
 
 // What is the scope
 // --------------------------------
@@ -493,36 +491,39 @@ function() { console.log('Never printed string'); };
 // Call a anonymous function with parameters
 (function(parameter1) {
 
-  // -> Hello
   console.log(parameter1);
 
 })('Hello');
+// -> Hello
 
 // The thing with global and local variables
 var globalVar = 'Me';
 
 (function(localVar) {
 
-  // -> "Me"
   console.log(localVar);
+  // -> "Me"
 
   localVar = "Not me";
 
-  // -> "Not me"
   console.log(localVar);
+  // -> "Not me"
 
-  // -> undefined
   console.log(globalVar);
+  // -> undefined
 
-  // -> "Me"
   console.log(window.globalVar);
+  // -> "Me"
 
   var globalVar = "Blub";
 
-  // -> "Blub"
   console.log(globalVar);
+  // -> "Blub"
 
 })(globalVar);
+
+console.log(globalVar);
+// -> "Me"
 
 // The thing with "use strict"
 
@@ -531,13 +532,13 @@ var globalVar = 'Me';
 
   "use strict";
 
-  // -> Uncaught ReferenceError
   newGlobalVarWithStrict = 'Something';
 
 })();
-
 // -> Uncaught ReferenceError
+
 newGlobalVarWithStrict;
+// -> Uncaught ReferenceError
 
 // But ...
 
@@ -546,5 +547,6 @@ newGlobalVarWithStrict;
   newGlobalVar = 'Something';
 
 })();
-// -> "Something";
+
 newGlobalVar;
+// -> "Something";
