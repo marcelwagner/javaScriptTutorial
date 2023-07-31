@@ -481,12 +481,19 @@ cantExtendString.someProperty;
 // -> Syntax error
 function() { console.log('Never printed string'); };
 
-// This is executing everything what is written in your scope
+// This is executing everything what is written in your anonymous function -> your own scope
 (function() {
-
+  
   // Your own scope
-
+  
 })();
+
+// In ES6 you can have your own scope by using curly brakets
+{
+  
+  // Your own scope
+  
+}
 
 // Call a anonymous function with parameters
 (function(parameter1) {
